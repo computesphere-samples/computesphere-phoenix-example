@@ -65,7 +65,7 @@ body {
 }
 
 .watermark {
-  background-image: url('/assets/images/background-img.png');
+  background-image: url('/images/background-img.png');
   background-size: cover;
 }
 
