@@ -1,11 +1,11 @@
-defmodule ComputespherePhoenixExampleWeb.Router do
-  use ComputespherePhoenixExampleWeb, :router
+defmodule ComputeSpherePhoenixExampleWeb.Router do
+  use ComputeSpherePhoenixExampleWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_live_flash
-    plug :put_root_layout, html: {ComputespherePhoenixExampleWeb.Layouts, :root}
+    plug :put_root_layout, html: {ComputeSpherePhoenixExampleWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -14,14 +14,14 @@ defmodule ComputespherePhoenixExampleWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", ComputespherePhoenixExampleWeb do
+  scope "/", ComputeSpherePhoenixExampleWeb do
     pipe_through :browser
 
     get "/", PageController, :home
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ComputespherePhoenixExampleWeb do
+  # scope "/api", ComputeSpherePhoenixExampleWeb do
   #   pipe_through :api
   # end
 
@@ -37,7 +37,7 @@ defmodule ComputespherePhoenixExampleWeb.Router do
     scope "/dev" do
       pipe_through :browser
 
-      live_dashboard "/dashboard", metrics: ComputespherePhoenixExampleWeb.Telemetry
+      live_dashboard "/dashboard", metrics: ComputeSpherePhoenixExampleWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
   end

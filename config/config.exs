@@ -11,17 +11,17 @@ config :computesphere_phoenix_example,
   generators: [timestamp_type: :utc_datetime]
 
 # Configures the endpoint
-config :computesphere_phoenix_example, ComputespherePhoenixExampleWeb.Endpoint,
+config :computesphere_phoenix_example, ComputeSpherePhoenixExampleWeb.Endpoint,
   url: [host: "localhost"],
   adapter: Bandit.PhoenixAdapter,
   render_errors: [
     formats: [
-      html: ComputespherePhoenixExampleWeb.ErrorHTML,
-      json: ComputespherePhoenixExampleWeb.ErrorJSON
+      html: ComputeSpherePhoenixExampleWeb.ErrorHTML,
+      json: ComputeSpherePhoenixExampleWeb.ErrorJSON
     ],
     layout: false
   ],
-  pubsub_server: ComputespherePhoenixExample.PubSub,
+  pubsub_server: ComputeSpherePhoenixExample.PubSub,
   live_view: [signing_salt: "mI26xuuY"]
 
 # Configures the mailer
@@ -31,7 +31,7 @@ config :computesphere_phoenix_example, ComputespherePhoenixExampleWeb.Endpoint,
 #
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
-config :computesphere_phoenix_example, ComputespherePhoenixExample.Mailer,
+config :computesphere_phoenix_example, ComputeSpherePhoenixExample.Mailer,
   adapter: Swoosh.Adapters.Local
 
 # Configure esbuild (the version is required)

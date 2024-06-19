@@ -1,6 +1,6 @@
-defmodule ComputespherePhoenixExample do
+defmodule ComputeSpherePhoenixExample do
   @moduledoc """
-  ComputespherePhoenixExample keeps the contexts that define your domain
+  ComputeSpherePhoenixExample keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

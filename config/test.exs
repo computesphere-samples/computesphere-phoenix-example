@@ -2,13 +2,13 @@ import Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :computesphere_phoenix_example, ComputespherePhoenixExampleWeb.Endpoint,
+config :computesphere_phoenix_example, ComputeSpherePhoenixExampleWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
   secret_key_base: "Cuu7GxqVI8jJ/dm9MTCBcrsWaoHjKILVBYowf7BsdO8BruCHrCXQg0MzsQVaKn6j",
   server: false
 
 # In test we don't send emails
-config :computesphere_phoenix_example, ComputespherePhoenixExample.Mailer,
+config :computesphere_phoenix_example, ComputeSpherePhoenixExample.Mailer,
   adapter: Swoosh.Adapters.Test
 
 # Disable swoosh api client as it is only required for production adapters
