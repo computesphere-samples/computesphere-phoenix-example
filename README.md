@@ -13,7 +13,7 @@ This example deploys a Phoenix application to ComputeSphere.
 
 -   A [ComputeSphere](https://computesphere.com) account
 -   [Git](https://git-scm.com/downloads)
--   [phoenix](https://www.phoenix.net)
+-   [Phoenix](https://www.phoenix.net)
 -   [Docker](https://docs.docker.com/engine/install/)
 
 ## Setup
