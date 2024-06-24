@@ -1,12 +1,14 @@
-defmodule ComputespherePhoenixExampleWeb.ErrorJSONTest do
-  use ComputespherePhoenixExampleWeb.ConnCase, async: true
+defmodule ComputeSpherePhoenixExampleWeb.ErrorJSONTest do
+  use ComputeSpherePhoenixExampleWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert ComputespherePhoenixExampleWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert ComputeSpherePhoenixExampleWeb.ErrorJSON.render("404.json", %{}) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500" do
-    assert ComputespherePhoenixExampleWeb.ErrorJSON.render("500.json", %{}) ==
+    assert ComputeSpherePhoenixExampleWeb.ErrorJSON.render("500.json", %{}) ==
              %{errors: %{detail: "Internal Server Error"}}
   end
 end

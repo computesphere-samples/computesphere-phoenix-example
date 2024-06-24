@@ -1,4 +1,4 @@
-defmodule ComputespherePhoenixExample.MixProject do
+defmodule ComputeSpherePhoenixExample.MixProject do
   use Mix.Project
 
   def project do
@@ -18,7 +18,7 @@ defmodule ComputespherePhoenixExample.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {ComputespherePhoenixExample.Application, []},
+      mod: {ComputeSpherePhoenixExample.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -69,7 +69,10 @@ defmodule ComputespherePhoenixExample.MixProject do
     [
       setup: ["deps.get", "assets.setup", "assets.build"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["tailwind computesphere_phoenix_example", "esbuild computesphere_phoenix_example"],
+      "assets.build": [
+        "tailwind computesphere_phoenix_example",
+        "esbuild computesphere_phoenix_example"
+      ],
       "assets.deploy": [
         "tailwind computesphere_phoenix_example --minify",
         "esbuild computesphere_phoenix_example --minify",

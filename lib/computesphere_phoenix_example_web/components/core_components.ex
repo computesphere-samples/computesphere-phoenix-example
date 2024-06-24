@@ -1,4 +1,4 @@
-defmodule ComputespherePhoenixExampleWeb.CoreComponents do
+defmodule ComputeSpherePhoenixExampleWeb.CoreComponents do
   @moduledoc """
   Provides core UI components.
 
@@ -17,7 +17,7 @@ defmodule ComputespherePhoenixExampleWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import ComputespherePhoenixExampleWeb.Gettext
+  import ComputeSpherePhoenixExampleWeb.Gettext
 
   @doc """
   Renders a modal.
@@ -661,9 +661,9 @@ defmodule ComputespherePhoenixExampleWeb.CoreComponents do
     # with our gettext backend as first argument. Translations are
     # available in the errors.po file (as we use the "errors" domain).
     if count = opts[:count] do
-      Gettext.dngettext(ComputespherePhoenixExampleWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(ComputeSpherePhoenixExampleWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(ComputespherePhoenixExampleWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(ComputeSpherePhoenixExampleWeb.Gettext, "errors", msg, opts)
     end
   end
 

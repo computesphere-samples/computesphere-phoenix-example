@@ -1,5 +1,5 @@
-defmodule ComputespherePhoenixExampleWeb.PageController do
-  use ComputespherePhoenixExampleWeb, :controller
+defmodule ComputeSpherePhoenixExampleWeb.PageController do
+  use ComputeSpherePhoenixExampleWeb, :controller
 
   def home(conn, _params) do
     # The home page is often custom made,

@@ -1,5 +1,5 @@
-defmodule ComputespherePhoenixExampleWeb.PageControllerTest do
-  use ComputespherePhoenixExampleWeb.ConnCase
+defmodule ComputeSpherePhoenixExampleWeb.PageControllerTest do
+  use ComputeSpherePhoenixExampleWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get(conn, ~p"/")

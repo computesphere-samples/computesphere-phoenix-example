@@ -1,4 +1,4 @@
-defmodule ComputespherePhoenixExampleWeb.Endpoint do
+defmodule ComputeSpherePhoenixExampleWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :computesphere_phoenix_example
 
   # The session will be stored in the cookie and signed,
@@ -23,7 +23,7 @@ defmodule ComputespherePhoenixExampleWeb.Endpoint do
     at: "/",
     from: :computesphere_phoenix_example,
     gzip: false,
-    only: ComputespherePhoenixExampleWeb.static_paths()
+    only: ComputeSpherePhoenixExampleWeb.static_paths()
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
@@ -48,5 +48,5 @@ defmodule ComputespherePhoenixExampleWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug ComputespherePhoenixExampleWeb.Router
+  plug ComputeSpherePhoenixExampleWeb.Router
 end
