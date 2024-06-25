@@ -56,10 +56,10 @@ Run the server locally.
 ```bash
 cd computesphere-phoenix-example
 
-docker run -p 4000:4000 computesphere-phoenix-example:v.0.0.1
+docker run -p 8080:80 computesphere-phoenix-example:v.0.0.1
 ```
 
-This runs the server on `localhost:4000`.
+This runs the server on `localhost:80`.
 
 ## Deploy to ComputeSphere
 
