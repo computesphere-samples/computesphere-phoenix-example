@@ -1,5 +1,5 @@
 <p align="right">
-    <a href="https://computesphere.com/"><img src="/priv/static/images/logo.svg" width="50px" /></a>
+    <a href="https://computesphere.com/"><img src="priv/static/images/logo.svg" width="50px" /></a>
 </p>
 
 # ComputeSphere Phoenix Example App
@@ -69,7 +69,7 @@ See our [guide](https://docs.computesphere.com/docs/getting-started/quickstart/g
 
 <!-- Check if this is the right link to the dashboard -->
 
-<a href="https://console.computesphere.com"> <img src="/priv/static/images/logo.svg" alt="ComputeSphere Logo"> </a>
+<a href="https://console.computesphere.com"> <img src="priv/static/images/logo.svg" alt="ComputeSphere Logo"> </a>
 
 ---
 [Explore ComputeSphere Documentation](https://docs.computesphere.com)
